@@ -1,5 +1,5 @@
 # Naive-Bayes-en-Python
-<h2>Teorema de bayes en python/h2>
+<h2>Teorema de bayes en python</h2>
 
 Para realizar las pruebas en el algoritmo de naive bayes en python se usaron los datos de la uci que se encuentran en la siguiente liga:
 
