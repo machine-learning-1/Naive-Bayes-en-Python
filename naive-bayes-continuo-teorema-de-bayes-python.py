@@ -1,6 +1,7 @@
 import csv
 import random
 import math
+from matplotlib import pyplot as plt
 #cargamos nuestros datos
 def loadCsv(archivo):
 	lines = csv.reader(open(archivo, "rb"))
@@ -103,7 +104,9 @@ def main():
 		decisiones = decide(probabilidades)
 		resultado = desempenho(decisiones,test)
 		result.append(resultado)
-	print result
+
+	plt.plot(porcentaje, result, color='green', marker='o', linestyle='solid')
+	plt.show()
 	#print test[1]
 	#prueba = [[1.0, 85.0, 66.0, 29.0, 0.0, 26.6, 0.351, 31.0, 0.0],[2.0, 197.0, 70.0, 45.0, 543.0, 30.5, 0.158, 53.0, 1.0]]
 	
